@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BFS vs DFS Treasure Hunt
 
 Educational web app visualizing and comparing Breadth-First Search (BFS), Depth-First Search (DFS), and A* pathfinding on a grid.
@@ -37,3 +38,6 @@ Then open http://127.0.0.1:8000 in your browser.
 - All pathfinding runs entirely in the browser; no Flask backend is needed.
 - The app visualizes algorithm exploration order and final paths.
 - A* uses a heuristic to guide search and can be faster than BFS/DFS when the heuristic is admissible.
+=======
+# Electro-store
+>>>>>>> d1e14acec33186648e7d2440936df758beb03b4f
