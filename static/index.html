@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BFS vs DFS Treasure Hunt</title>
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+  <header class="top">
+    <h1>BFS vs DFS — Treasure Hunt</h1>
+    <div class="controls">
+      <button id="themeToggle">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="left">
+      <div class="toolbar">
+        <label>Grid Size: <input id="gridSize" type="number" min="5" max="40" value="15"></label>
+        <button id="setStartBtn">Set Start</button>
+        <button id="setGoalBtn">Set Treasure</button>
+        <button id="placeWallsBtn">Place Walls</button>
+        <button id="clearBtn">Clear Grid</button>
+        <button id="randomBtn">Random Maze</button>
+      </div>
+
+      <div id="gridContainer"></div>
+
+      <div class="runControls">
+        <label>Speed: <input id="speed" type="range" min="5" max="200" value="50"></label>
+        <button id="runBfs">Run BFS</button>
+        <button id="runDfs">Run DFS</button>
+        <button id="runAstar">Run A*</button>
+        <button id="compare">Compare Algorithms</button>
+      </div>
+    </section>
+
+    <aside class="right">
+      <div class="panel">
+        <h3>Results</h3>
+        <div id="results"></div>
+      </div>
+
+      <div class="panel">
+        <h3>Legend</h3>
+        <ul class="legend">
+          <li><span class="cell start"></span> Start (Rocket)</li>
+          <li><span class="cell goal"></span> Treasure (Diamond)</li>
+          <li><span class="cell wall"></span> Wall</li>
+          <li><span class="cell bfs"></span> BFS Path/Visited</li>
+          <li><span class="cell dfs"></span> DFS Path/Visited</li>
+          <li><span class="cell astar"></span> A* Path/Visited</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Complexity</h3>
+        <p>BFS: explores level-by-level. Complexity: O(V + E)</p>
+        <p>DFS: explores deeply before backtracking. Complexity: O(V + E)</p>
+        <p>A*: uses a heuristic for best-first search. Complexity: O(E) in the best case, and O(b<sup>d</sup>) in the worst case depending on heuristic quality.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>

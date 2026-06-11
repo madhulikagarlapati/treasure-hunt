@@ -1,0 +1,2 @@
+# No external Python packages are required for the browser-only version.
+# `app.py` uses Python built-in http.server if you want to serve the static files locally.
